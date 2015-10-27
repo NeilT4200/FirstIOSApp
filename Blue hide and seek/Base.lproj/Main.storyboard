@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Blue_hide_and_seek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Other shape" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-cI-grZ">
+                                <rect key="frame" x="0.0" y="443" width="375" height="197"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue shape image" translatesAutoresizingMaskIntoConstraints="NO" id="KtC-3B-1dc">
+                                <rect key="frame" x="0.0" y="226" width="375" height="242"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRd-vT-aag">
+                                <rect key="frame" x="80" y="28" width="215" height="30"/>
+                                <state key="normal" title="Make mountains disappear">
+                                    <color key="titleColor" red="0.35815165066565946" green="1" blue="0.87533912931019264" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeMountainsDisappear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lED-Y2-KYn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41K-Iz-7mW">
+                                <rect key="frame" x="71" y="146" width="243" height="30"/>
+                                <state key="normal" title="Make circle thing disappear :)">
+                                    <color key="titleColor" red="1" green="0.50980833861289376" blue="0.41714693707675221" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeOtherDisappear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h0y-d8-cci"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="coolObject1" destination="9ba-cI-grZ" id="cAI-6o-U2p"/>
+                        <outlet property="coolObject2" destination="KtC-3B-1dc" id="paW-mP-SXh"/>
+                        <outlet property="mountainsDisappear" destination="rRd-vT-aag" id="aGR-2f-Lzf"/>
+                        <outlet property="object1Disappear" destination="41K-Iz-7mW" id="qeJ-PU-LT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321.5" y="372.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blue shape image" width="2480" height="1055"/>
+        <image name="Other shape" width="1612" height="806"/>
+    </resources>
+</document>
